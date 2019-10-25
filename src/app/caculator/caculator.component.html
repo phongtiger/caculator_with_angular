@@ -1,0 +1,21 @@
+<p>caculator works!</p>
+<h2>Caculator</h2>
+<label>
+  A:
+  <input type="text" (change)="updateNumberA($event.target.value)">
+</label>
+<br/>
+<label>
+  B:
+  <input type="text" (change)="updateNumberB($event.target.value)">
+</label>
+<br/>
+<select  class='form-control'
+         (change)="ChangingValue($event.target.value)">
+  <option value='+'>cong</option>
+  <option value='-'>tru</option>
+  <option value='*'>nhan</option>
+  <option value='/'>chia</option>
+</select>
+<br/>
+<h3>Ket qua: {{result}}</h3>
